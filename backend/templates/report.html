@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <style>
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            th, td {
+                border: 1px solid black;
+                padding: 8px;
+                text-align: left;
+            }
+            th {
+                background-color: #f2f2f2;
+
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Monthly Report for {{ name }}</h2>
+        <table>
+            <tr>
+                <th>Key Matrics</th>
+                <th>This Month</th>
+            </tr>
+            <tr>
+                <td>Total Number of Posts</td>
+                <td>{{ total_posts }}</td>
+            </tr>
+            <tr>
+                <td>Total Number of Likes </td>
+                <td> {{ total_likes }} </td>
+            </tr>
+            <tr>
+                <td>Total Number of Followers</td>
+                <td> {{ total_followers }} </td>
+            </tr>
+            <tr>
+                <td>Total Number of People You Follow</td>
+                <td> {{ total_following }} </td>
+            </tr>
+        </table>
+        <br>
+        <p>
+            ** Don't forget to keep using Blog Lite.
+        </p>
+    </body>
+</html>
